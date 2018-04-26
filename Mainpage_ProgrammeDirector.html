@@ -22,6 +22,14 @@
                 <label for="module code"> Module code:</label>
                 <input type="text" name=" module code" readonly />
 
+                <br /><br />
+                Assessment: <select name="assessment" placeholder="Select an assessment">
+                    <option value=" ">Assessment 1 </option>
+                    <option value=" ">Assessment 2 </option>
+                    <option value=" ">Assessment 3 </option>
+                </select>
+                <br /><br />
+
                 <label for="amount of students"> Amount of Students:</label>
                 <input type="text" name=" amount of students" readonly />
 
@@ -45,20 +53,25 @@
         </div>
 
         <form>
-            <div class="container" align: right >
+            <div class="column" >
+                <div class=" container">
 
                 <h3>Module Checker</h3>
-                Re-assess: <input type="checkbox" name=" re-assess" />
+                Re-assess: <input type="checkbox" name=" re-assess"readonly />
                 <br /><br />
-                Release date: <input type="date" name=" release date" />
+                Release date: <input type="date" name=" release date"readonly />
                 <br /><br />
-                Submission: <input type="date" name=" submision date" />
+                Submission: <input type="date" name=" submision date" readonly/>
                 <br /><br />
-                Extension:<input type="checkbox" name=" extension" />
-                Extension date: <input type="date" name="extension date" />
+                Extension:<input type="checkbox" name=" extension" readonly/>
+                Extension date: <input type="date" name="extension date" readonly />
                 <br /><br />
+                <label for=" comments">Comments: </label>
+                <textarea name=" comments"rows="6" cols="50"></textarea>
 
                 <button type="submit">Submit</button>
+                </div>
+                
 
             </div>
 
