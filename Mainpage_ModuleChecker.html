@@ -4,48 +4,75 @@
 <head>
     <meta charset="utf-8" />
     <title>Main Page</title>
+    <link rel="stylesheet" href="StyleSheet2.css" />
+
 </head>
 <body>
     <div class=" main page">
-        <form>
-            <h2>Main Page</h2>
-            <p1>
-                Module code:   <input type="text" name=" module code " disabled="disabled" />
-                <br />
-                <br />
-                Module Name:   <input type=" text" name=" module name" disabled="disabled" />
-                <br /><br />
-                Amount of Students:  <input type=" text" name=" amount of students" disabled="disabled"  />
-                <br /><br />
-                Level:   <input type=" text" name=" level" disabled="disabled"  />
-                <br /><br />
-                Module Manager:  <input type=" text" name=" module manger" disabled="disabled" />
-                <br /><br />
-                Area:   <input type="text" name=" area" disabled="disabled" />
-                <br /><br />
-                Assessment type:   <input type="text" name=" assessment manager" disabled="disabled" />
-                <br /><br />
-                Module Percentage:   <input type="text" name="module percentage" disabled="disabled" />
+        <div class=" container">
+            <form>
+                <h2>Main Page</h2>
 
-            </p1>
+                Module name: <select name="module name" placeholder="Select a Module">
+                    <option value=" ">Module 1 </option>
+                    <option value=" ">Module 2 </option>
+                    <option value=" ">Module 3 </option>
+                </select>
+                <br /><br />
+                <label for="module code"> Module code:</label>
+                <input type="text" name=" module code" readonly />
+                <br /><br />
+                Assessment: <select name="assessment" placeholder="Select an assessment">
+    <option value=" ">Assessment 1 </option>
+    <option value=" ">Assessment 2 </option>
+    <option value=" ">Assessment 3 </option>
+</select>
+<br /><br />
+
+    <label for="amount of students"> Amount of Students:</label>
+    <input type="text" name=" amount of students" readonly />
+
+    <label for="module code"> Level:</label>
+    <input type="text" name=" level" readonly />
+
+    <label for="module manager"> Module manager:</label>
+    <input type="text" name=" module manager" readonly />
+
+    <label for="areae"> Area:</label>
+    <input type="text" name=" area" readonly />
+
+    <label for="assessment type"> Assessment type: </label>
+    <input type="text" name=" assessment type" readonly />
+
+    <label for="module percentage"> Module percentage:</label>
+    <input type="text" name="module percentage" readonly />
+
+
+</form>
+        </div>
+
+        <form>
+            <div class="column">
+                <div class=" container">
+
+                    <h3>Module Checker</h3>
+                    Re-assess: <input type="checkbox" name=" re-assess" readonly />
+                    <br /><br />
+                    Release date:    <input type="date" name=" release date" readonly />
+                    <br /><br />
+                    Submission: <input type="date" name=" submision date" readonly />
+                    <br /><br />
+                    Extension:<input type="checkbox" name=" extension" readonly />
+                    Extension date: <input type="date" name="extension date" readonly />
+                    <br />
+                    Confirm details:<input type="checkbox" name=" confirm details" required /> 
+                    <button type="submit" >Submit</button>
+                </div>
+
+
+            </div>
 
         </form>
-
-        <nav>
-            <h3>Module Checker</h3>
-            Re-assess: <input type="checkbox" name=" re-assess" />
-            <br /><br />
-            Release date: <input type="date" name=" release date" />
-            <br /><br />
-            Submission: <input type="date" name=" submision date" />
-            <br /><br />
-            Extension: <input type="checkbox" name="Extensioncheckbox" />
-
-            Extension date: <input type="date" name="extension date" />
-            <br /><br />
-            <input type="submit" value="Submit" />
-
-        </nav>
 
     </div>
 
