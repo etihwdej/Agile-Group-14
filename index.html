@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Login page</title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+</head>
+
+<body>
+    <div class=" login page">
+
+            <h2>Log in</h2>
+            
+            <form action="/action_page.php">
+                <div class="imgcontainer">
+                    <img src="avatar.png" alt="Avatar" class="avatar">
+                </div>
+                <div class=" container">
+                    <label for="role"><b>Select your role</b></label>
+                    <select name="role">
+                        <option value="Module Manager">Module Manager</option>
+                        <option value="Module Checker ">Module Checker </option>
+                        <option value="Programme Director">Programme Director</option>
+                    </select>
+                    <br /><br />
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" name=" uname" placeholder="Enter Username" required />
+
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" name="password" placeholder="Enter Password" required />
+
+                    <button type="submit">Login</button>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                    </div>
+</form>
+
+     </div>
+
+</body>
+</html>
