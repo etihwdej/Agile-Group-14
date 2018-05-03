@@ -28,8 +28,8 @@
                 Extension:<input type="checkbox" name=" extension" />
                 Extension date: <input type="date" name="extension date" />
                 <br /><br />
-                    <label for=" comments">Comments: </label>
-                    <textarea name=" comments" rows="6" cols="50"></textarea>
+                    <label for =" comments " > Comments and reccomendations: </label>
+                    <textarea name=" comments " rows ="6" cols ="50"></textarea>
 
                 <button type="submit">Submit</button>
                        </div> 
@@ -37,15 +37,34 @@
                 <h2>Main Page</h2>
 
                 Module name:
-                <select name="module name" placeholder="Select a Module">
-                    <option value=" ">Module 1 </option>
-                    <option value=" ">Module 2 </option>
-                    <option value=" ">Module 3 </option>
+                <select id="module name" onchange="myFunction()">
+                    <option value="1">Fundamentals of Computing</option>
+                    <option value="2">Web Skills and Technologies</option>
+                    <option value="3">Computer Science in Context Group Project</option>
                 </select>
+                    <label for="module code">Module code:</label>
+                <input type="text" name="module code" id ="module code" readonly="true" />
+                    <script>
+                        function myFunction() {
+                            var moduleName = document.getElementById("module name").value;
+                            if (moduleName == "1") {
+                                moduleCode = "8014";
+                            }
+                            else if (moduleName == "2")
+                            {
+                                moduleCode = "8015";
+                            }
+                            else if (moduleName == "3")
+                            {
+                                moduleCode = "8031";
+                            }
+                            document.getElementById("module code").value = moduleCode;
+                        }
+                    </script>
+
                 <br />
                 <br />
-                <label for="module code">Module code:</label>
-                <input type="text" name=" module code" readonly="true" />
+                
                 <br />
                 <br />
                 Assessment:
