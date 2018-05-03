@@ -1,7 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
-
 <!DOCTYPE html>
-,
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -13,76 +10,155 @@
 <body>
     <div class=" main page">
         <div class=" container">
-            <div class="row">
             <form>
-                
-                <div class="column">
                 <h2>Main Page</h2>
 
-                Module name:
-                <select name="module name" placeholder="Select a Module">
+                Module name: <select name="module name" placeholder="Select a Module">
                     <option value=" ">Module 1 </option>
                     <option value=" ">Module 2 </option>
                     <option value=" ">Module 3 </option>
                 </select>
-                <br />
-                <br />
-                <label for="module code">Module code:</label>
-                <input type="text" name=" module code" readonly="true" />
-                <br />
-                <br />
-                Assessment:
-                <select name="assessment" placeholder="Select an assessment">
+
+                <label for="module number"> Module Number:</label>
+                <input type="text" name=" module number" readonly />
+                <br /><br />
+
+                Assessment: <select name="assessment">
                     <option value=" ">Assessment 1 </option>
                     <option value=" ">Assessment 2 </option>
                     <option value=" ">Assessment 3 </option>
                 </select>
-                <br />
-                <br />
 
-                <label for="amount of students">Amount of Students:</label>
-                <input type="text" name=" amount of students" readonly="true" />
-
-                <label for="module code">Level:</label>
-                <input type="text" name=" level" readonly="true" />
-
-                <label for="module manager">Module manager:</label>
-                <input type="text" name=" module manager" readonly="true" />
-
-                <label for="areae">Area:</label>
-                <input type="text" name=" area" readonly />
-
-                <label for="assessment type">Assessment type: </label>
-                <input type="text" name=" assessment type" readonly="true" />
-
-                <label for="module percentage">Module percentage:</label>
-                <input type="text" name="module percentage" readonly="true" />
-                   </div>
+                <label for="level"> Level:</label>
+                <input type="text" name=" level" readonly />
 
 
-               <div class="column">
-                    
-                <h3>Module Checker</h3>
-                Re-assess: <input type="checkbox" name=" re-assess" />
-                <br /><br />
-                Release date: <input type="date" name=" release date" />
-                <br /><br />
-                Submission: <input type="date" name=" submision date" />
-                <br /><br />
-                Extension:<input type="checkbox" name=" extension" />
-                Extension date: <input type="date" name="extension date" />
-                <br /><br />
+                <label for="assessment setter"> Assessment Setter:</label>
+                <input type="text" name=" assessment setter" readonly />
 
-                <button type="submit">Submit</button>
-                       </div> 
-           
+                <label for="internal reviewers"> Internal Reviewers:</label>
+                <input type="text" name=" internal reviewer" readonly />
+
+                <label for=" assessment weighting towards module mark">Assessment weighting: </label>
+                <input type="text" name=" assment weighting" readonly />
+
+
+
             </form>
+        </div>
+
+        <form>
+            <div class="column">
+                <div class=" container">
+
+                    <h3>Module Checker</h3>
+                    <p><i>(Please tick the appropriate box)</i></p>
+                    
+                    Does the assessment match the weighting and size/length as published in
+                    the module specification and CANVAS?
+                    <input type="radio" name="yes">Yes
+                    <input type="radio" name="no">No
+                    <br /><br />
+
+                    Does the assessment address the relevant learning outcomes stated in the
+                    module specification? If appropriate, are the learning outcomes identified?
+                    <input type="radio" name="yes">Yes
+                    <input type="radio" name="no">No
+                    <br /><br />
+
+                    Is the assessment clear and unambiguous?
+                    <input type="radio" name="yes">Yes
+                    <input type="radio" name="no">No
+                    <br /><br />
+
+                    Does the assessment appear to be at an appropriate level within the FHEQ?
+                    <input type="radio" name="yes">Yes
+                    <input type="radio" name="no">No
+                    <br /><br />
+
+                    Does the time allocated to the students to complete the task/paper appear
+                    suitable?
+                    <input type="radio" name="yes">Yes
+                    <input type="radio" name="no">No
+                    <br /><br />
+
+                    Does the marking scheme/assessment criteria appear to be appropriate?
+                    <input type="radio" name="yes">Yes
+                    <input type="radio" name="no">No
+                    <br /><br />
+
+                    Is the marking scheme consistent with the University’s Generic Grading
+                    Descriptors?
+                    <input type="radio" name="yes">Yes
+                    <input type="radio" name="no">No
+                    <br /><br />
+
+                    Is the assessment devised in such a way to limit academic misconduct and
+                    promote assessment for learning?
+                    <input type="radio" name="yes">Yes
+                    <input type="radio" name="no">No
+                    <br /><br />
+
+                    Does the task require second marking and has the marker been identified?
+                    <input type="radio" name="yes">Yes
+                    <input type="radio" name="no">No
+                    <br /><br />
+
+                    If relevant, does the assessment have ethical approval?
+                    <input type="radio" name="yes">Yes
+                    <input type="radio" name="no">No
+                    <br /><br />
+
+                    If relevant, has a risk assessment been completed and approved?
+                    <input type="radio" name="yes">Yes
+                    <input type="radio" name="no">No
+                    <br /><br />
+
+
+                    Is the reassessment method the same as the original assessment?
+                    <input type="radio" name="yes">Yes
+                    <input type="radio" name="no">No
+                    <br /><br />
+
+                    Provide details for any ‘No’ responses above and provide an overall
+                    evaluation of the assessment:<br />
+                    <textarea rows="15" cols=" 90"></textarea>
+                    <br /><br />
+
+
+
+                    <fieldset>
+                        <legend><b></b>Recommendation of Internal Reviewer(s)</b></legend>
+                        <div>
+                            <label for="approved">Approved</label>
+                            <input type="checkbox" name="approved" >                            
+                        </div>
+                        <div>
+                            <label for="approved with amendments">Approved with suggested amendments</label>
+                            <input type="checkbox" name="approved with amendments" >                            
+                        </div>
+                        <div>
+                            <label for="not approved">Not Approved</label>
+                            <input type="checkbox" name="not approved" >                           
+                        </div>
+                    </fieldset>
+
+                    <button type="submit">Submit</button>
+                    <button onclick="goBack()">Go Back</button>
+
+                    <script>
+                        function goBack() {
+                            window.history.back();
+                        }
+                    </script>
+                </div>
+
 
             </div>
-            </div>
-            </div>
 
-        
+        </form>
+
+    </div>
+
 </body>
 </html>
-
