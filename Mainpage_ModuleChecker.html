@@ -65,8 +65,15 @@
                     Extension:<input type="checkbox" name=" extension" readonly />
                     Extension date: <input type="date" name="extension date" readonly />
                     <br />
-                    Confirm that publication is valid:<input type="checkbox" name=" confirm details" required /> 
-                    <button type="submit" >Submit</button>
+                    Confirm that publication is valid:<input type="checkbox" name=" confirm details" required />
+                    <button type="submit">Submit</button>
+                    <!--<button onclick="goBack()">Go Back</button>-->
+
+                    <script>
+            function goBack() {
+                window.history.back();
+            }
+                    </script>
                 </div>
 
 
