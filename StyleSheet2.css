@@ -1,5 +1,8 @@
-﻿/* Bordered form */
-form {
+
+    /* Bordered form */
+    form
+
+{
     border: 3px solid #f1f1f1;
 }
 
@@ -11,17 +14,15 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-  
-   
 }
+
 label {
-    margin-top:8px;
-   
+    margin-top: 8px;
     display: block;
 }
 
-    /* Set a style for all buttons */
-    button {
+/* Set a style for all buttons */
+button {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -30,25 +31,41 @@ label {
     cursor: pointer;
     width: 20%;
 }
-    
+
     /* Add a hover effect for buttons */
     button:hover {
         opacity: 0.8;
     }
-
+mainpage {
+    float: left;
+    max-width: 300px;
+    margin: 0;
+    padding: 1em;
+}
 .container {
     background-color: #f2f2f2;
     padding: 5px 20px 15px 20px;
     border: 1px solid lightgrey;
     border-radius: 3px;
+    width: 100%;
 }
-
+modulecheckerbox {
+    
+    float: right;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .column {
     float: right;
-    width: 50%;
+    width: 45%;
     background-color: #f2f2f2;
     padding: 5px 20px 15px 20px;
-
 }
 
 /* The "Forgot password" text */
@@ -68,3 +85,4 @@ span.psw {
         width: 100%;
     }
 }
+
