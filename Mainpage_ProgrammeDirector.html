@@ -49,16 +49,20 @@
                             var moduleName = document.getElementById("module name").value;
                             if (moduleName == "1") {
                                 moduleCode = "8014";
+                                moduleManager = "John";
                             }
                             else if (moduleName == "2")
                             {
                                 moduleCode = "8015";
+                                moduleManager = "John";
                             }
                             else if (moduleName == "3")
                             {
                                 moduleCode = "8031";
+                                moduleManager = "John";
                             }
                             document.getElementById("module code").value = moduleCode;
+                            document.getElementById("module manager").value = moduleManager;
                         }
                     </script>
 
@@ -81,7 +85,7 @@
 
 
                 <label for="module manager">Module manager:</label>
-                <input type="text" name=" module manager" readonly="true" />
+                <input type="text" name=" module manager" id="module manager" readonly="true" />
 
                    </div>
 
